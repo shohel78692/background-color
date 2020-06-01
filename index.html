@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>shaikh colors</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <button class="btn">SWITCH COLOR</button>
+  <script>
+  	
+  	var color = ["#222f3e", "#f368e0", "#ee5253", "#0abde3", "#10ac84", "#222f56", "#5f27cd", "#58fr54"];
+  	var i = 0;
+  	document.querySelector("button").addEventListener("click", function(){
+  		i = i < color.length ? ++i : 0;
+  		document.querySelector("body").style.background = color[i]
+  	})
+
+  </script>
+</body>
+</html>
